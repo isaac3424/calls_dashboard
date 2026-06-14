@@ -1,0 +1,196 @@
+call_id,coordinator,patient_id,phone,call_time,duration_sec,disposition,notes
+5122,Ken Tanaka,P-1049,5550310743,2026-05-15T20:05:00Z,1:49,Spoke w/ patient,"Confirmed appt for next week, no concerns"
+5125,Ken Tanaka,P-1051,1-555-069-0996,2026-05-13 09:11:00,13,No Answer,"Wrong number, flag for data cleanup"
+5048,Zoë Hartman,P-1019,1-555-035-3080,26-May-2026 15:58,195,Connected,"Confirmed appt for next week, no concerns"
+5141,Zoë Hartman,P-1056,(555) 059-5351,11-May-2026 17:29,30,wrong #,Number disconnected - need updated contact
+5004,Marcus Lee,P-1002,+1 555 078 1453,06/04/2026 09:21 PM,14,Voicemail,"LVM, will retry"
+5037,Marcus Lee,P-1015,5550674485,05/28/2026 05:18 PM,122,Connected,Pt agreed to schedule follow-up
+5140,José Alvarez,P-1055,(555) 058-1992,05/29/26 01:42,0:15,Disconnected,"Reached spouse, pt not available, call back after 5pm"
+5092,Aisha Bello,P-1036,555-015-7443,05/15/2026 12:48 PM,48,ANSWERED,"Confirmed appt for next week, no concerns"
+5159,Aisha Bello,P-1063,1-555-098-8283,05/13/2026 01:54 PM,30,Disconnected,"LVM, will retry"
+5015,Priya Nair,P-1008,5550238739,2026-05-30T15:45:00Z,6,NA,
+5144,Priya Nair,P-1058,+1 555 057 6419,2026-05-17 17:59:00,27,wrong #,Number disconnected - need updated contact
+5054,Priya Nair,,+1 555 014 7726,2026-05-22 04:36:00,5,Left VM,"Mailbox full, could not leave message"
+5082,Marcus Lee,P-1033,5550332311,2026-05-20T16:11:00Z,25,VM,Number disconnected - need updated contact
+5078,Marcus Lee,P-1030,5550786735,19-May-2026 09:14,272,ANSWERED,Pt agreed to schedule follow-up
+5058,Ken Tanaka,P-1022,5550804938,2026-05-16 16:03:00,27,No Answer,"No answer, second attempt"
+5110,Priya Nair,P-1043,(555) 033-2823,05/19/2026 06:33 PM,-3,Busy,"Reached spouse, pt not available, call back after 5pm"
+5036,Marcus Lee,P-1015,555-067-4485,2026-05-25T13:18:00Z,33,wrong #,"Mailbox full, could not leave message"
+5025,Marcus Lee,P-1011,1-555-023-7174,05/29/2026 06:15 PM,120,Spoke w/ family,"Scheduled, sending reminder"
+5139,José Alvarez,P-1055,1-555-058-1992,2026-05-26T00:42:00Z,518,Connected,"Reviewed care plan, all good"
+5068,Tom Becker,P-1025,(555) 017-1744,05/20/2026 12:17 PM,91,Callback requested,"Scheduled, sending reminder"
+5131,Marcus Lee,P-1053,(555) 098-3791,05/14/26 09:57,35,Busy,
+5097,Marcus Lee,P-1038,+1 555 069 1912,21-May-2026 13:39,,Busy,Number disconnected - need updated contact
+5069,Priya Nair,P-1026,5550475876,05/29/26 10:40,24,Wrong Number,
+5068,Tom Becker,P-1025,(555) 017-1744,05/20/2026 12:17 PM,91,Spoke w/ patient,"Scheduled, sending reminder"
+5104,José Alvarez,P-1041,5550270128,2026-05-16T15:32:00Z,15,wrong #,"Wrong number, flag for data cleanup"
+5120,Tom Becker,P-1048,555-024-9715,31-May-2026 14:38,22,NA,"Wrong number, flag for data cleanup"
+5073,Priya Nair,P-1028,1-555-088-1369,2026-05-24T12:08:00Z,5,Disconnected,"No answer, second attempt"
+5157,Aisha Bello,P-1062,555-029-7636,05/24/2026 05:21 AM,26,VM,"Reached spouse, pt not available, call back after 5pm"
+5160,Zoë Hartman,P-1064,(555) 058-8899,05/22/2026 05:26 PM,30,Voicemail,
+5161,Tom Becker,P-1064,5550588899,2026-05-24T22:26:00Z,178,answered,"Confirmed appt for next week, no concerns"
+5115,Ken Tanaka,P-1047,+1 555 023 0521,27-May-2026 18:51,97,ANSWERED,"Reviewed care plan, all good"
+5065,Ken Tanaka,P-1024,555-029-9869,05/20/2026 03:19 PM,24,Busy,"Wrong number, flag for data cleanup"
+5046,Tom Becker,P-1017,555-013-2537,05/24/26 21:38,30,voicemail,
+5063,Ken Tanaka,P-1024,+1 555 029 9869,13-May-2026 13:19,999999,no-answer,"Mailbox full, could not leave message"
+5096,Priya Nair,P-1037,+1 555 051 6359,2026-06-01 22:25:00,11,No Answer,"No answer, second attempt"
+5124,Priya Nair,P-1050,1-555-018-2690,05/28/26 12:38,5,Wrong Number,"Reached spouse, pt not available, call back after 5pm"
+5003,Marcus Lee,P-1002,1-555-078-1453,2026-06-01T17:21:00Z,418,ANSWERED,"Confirmed appt for next week, no concerns"
+5070,Tom Becker,P-1026,+1 555 047 5876,30-May-2026 16:40,391,Reached - scheduled,"Reviewed care plan, all good"
+5064,José Alvarez,P-1024,555-029-9869,05/16/2026 03:19 PM,238,Spoke w/ patient,"Patient said ""feeling much better"", declined visit for now"
+5173,Priya Nair,P-1070,555-072-7094,05/11/26 12:56,0:35,Voicemail,"Wrong number, flag for data cleanup"
+5164,Dana Whitfield,P-1065,+1 555 067 7390,2026-05-24 22:16:00,,,"Spoke with patient, will call back to confirm time"
+5111,Dana Whitfield,P-1044,5550536802,2026-05-27T13:34:00Z,32,busy signal,"Reached spouse, pt not available, call back after 5pm"
+5116,Marcus Lee,P-1047,+1 555 023 0521,2026-05-31 20:51:00,22,Disconnected,
+5107,Zoë Hartman,P-1043,5550332823,2026-05-11 14:33:00,24,NA,"No answer, second attempt"
+5076,Tom Becker,P-1029,(555) 062-6169,2026-05-25T19:21:00Z,1:28,,"Wrong number, flag for data cleanup"
+5112,Ken Tanaka,P-1045,555-092-6823,2026-05-29T13:38:00Z,5:24,Connected,"Reviewed care plan, all good"
+5044,Zoë Hartman,P-1017,5550132537,2026-05-18 17:38:00,0:07,No Answer,
+5109,Marcus Lee,P-1043,+1 555 033 2823,15-May-2026 18:33,27,Wrong Number,"Reached spouse, pt not available, call back after 5pm"
+5130,Dana Whitfield,P-1053,555-098-3791,2026-05-11T09:57:00Z,23,No Answer,"Wrong number, flag for data cleanup"
+5144,Priya Nair,P-1058,+1 555 057 6419,2026-05-17 17:59:00,27,wrong #,Number disconnected - need updated contact
+5170,Aisha Bello,P-1069,1-555-097-5194,2026-06-01T19:54:00Z,28,wrong #,"Mailbox full, could not leave message"
+5155,Aisha Bello,P-1062,(555) 029-7636,05/17/2026 05:21 PM,17,no-answer,"Mailbox full, could not leave message"
+5174,Zoë Hartman,P-1070,555-072-7094,2026-05-14 14:56:00,27,Voicemail,"No answer, second attempt"
+5024,Dana Whitfield,P-1011,1-555-023-7174,05/25/2026 05:15 PM,4,VM,"LVM, will retry"
+5017,Ken Tanaka,P-1009,5550324130,05/16/26 14:30,29,No Answer,
+5148,Ken Tanaka,P-1059,555-056-8449,05/12/26 17:27,338,Spoke w/ patient,Pt agreed to schedule follow-up
+5059,Dana Whitfield,P-1022,5550804938,05/17/26 22:03,31,no-answer,"Wrong number, flag for data cleanup"
+5035,Zoë Hartman,P-1014,+1 555 079 6101,05/26/26 21:21,29,Reached - scheduled,
+5172,Aisha Bello,P-1069,(555) 097-5194,06/06/26 04:54,8,No Answer,"LVM, will retry"
+5040,José Alvarez,P-1016,5550316881,31-May-2026 18:00,29,voicemail,
+5055,Tom Becker,P-1020,1-555-014-7726,05/26/2026 06:36 AM,46,Spoke w/ family,"Patient said ""feeling much better"", declined visit for now"
+5066,Aisha Bello,P-1024,555-029-9869,05/23/2026 09:19 PM,0:33,Busy,"LVM, will retry"
+5151,Priya Nair,P-1061,+1 555 050 1058,2026-05-23 14:35:00,34,wrong #,
+5020,Tom Becker,P-1009,5550324130,05/23/2026 11:30 PM,16,busy signal,"Mailbox full, could not leave message"
+5129,José Alvarez,P-1052,(555) 035-6773,05/31/2026 12:34 AM,,Busy,"LVM, will retry"
+5031,Tom Becker,P-1013,(555) 041-4910,05/21/2026 03:14 PM,26,voicemail,"No answer, second attempt"
+5008,Marcus Lee,P-1005,1-555-026-7753,2026-05-23 15:08:00,173,Reached - scheduled,"Patient said ""feeling much better"", declined visit for now"
+5081,Ken Tanaka,P-1032,1-555-034-4316,2026-05-20T11:38:00Z,26,voicemail,"Wrong number, flag for data cleanup"
+5137,Tom Becker,P-1055,+1 555 058 1992,19-May-2026 15:42,19,No Answer,"Reached spouse, pt not available, call back after 5pm"
+5093,Tom Becker,P-1037,(555) 051-6359,2026-05-25T10:25:00Z,264,ANSWERED,"Patient said ""feeling much better"", declined visit for now"
+5132,Dana Whitfield,P-1053,5550983791,2026-05-17 13:57:00,146,ANSWERED,Pt agreed to schedule follow-up
+5134,José Alvarez,P-1054,1-555-073-5710,05/17/26 18:09,1,Disconnected,
+5143,Dana Whitfield,P-1058,5550576419,05/15/2026 04:59 PM,10,Voicemail,"Mailbox full, could not leave message"
+5074,Aisha Bello,P-1029,1-555-062-6169,05/19/2026 04:21 PM,7,NA,
+5102,José Alvarez,P-1040,555-093-0117,2026-05-24T16:53:00Z,203,Connected,"Reviewed care plan, all good"
+5127,Tom Becker,P-1052,555-035-6773,2026-05-23 18:34:00,0:35,NA,"Reached spouse, pt not available, call back after 5pm"
+5099,Marcus Lee,P-1038,555-069-1912,27-May-2026 23:39,,voicemail,"LVM, will retry"
+5023,Marcus Lee,P-1010,5550580547,2026-05-17 20:04:00,,wrong #,"Wrong number, flag for data cleanup"
+5027,Zoë Hartman,P-1012,555-080-2448,2026-05-19T11:20:00Z,2,no-answer,
+5126,Priya Nair,P-1052,5550356773,05/20/26 15:34,26,voicemail,Number disconnected - need updated contact
+5128,José Alvarez,P-1052,+1 555 035 6773,26-May-2026 21:34,10,no-answer,"No answer, second attempt"
+5060,Dana Whitfield,P-1022,5550804938,2026-05-19T04:03:00Z,0,busy signal,
+5041,Zoë Hartman,P-1016,(555) 031-6881,2026-06-04 20:00:00,5,no-answer,"Mailbox full, could not leave message"
+5012,Ken Tanaka,P-1006,+1 555 094 5964,15-May-2026 20:22,0:19,Disconnected,"No answer, second attempt"
+5090,Marcus Lee,P-1035,+1 555 033 7144,2026-06-04 15:08:00,3,Wrong Number,"LVM, will retry"
+5142,Dana Whitfield,,1-555-070-2022,12-May-2026 10:56,25,voicemail,"LVM, will retry"
+5138,Aisha Bello,P-1055,555-058-1992,2026-05-22T19:42:00Z,18,Disconnected,"Mailbox full, could not leave message"
+5083,Tom Becker,P-1033,1-555-033-2311,05/21/26 17:11,35,wrong #,"Reached spouse, pt not available, call back after 5pm"
+5158,José Alvarez,P-1063,5550988283,05/12/26 12:54,65,Spoke w/ patient,"Patient said ""feeling much better"", declined visit for now"
+5152,Aisha Bello,P-1061,555-050-1058,05/25/26 20:35,69,Callback requested,"Reached spouse, pt not available, call back after 5pm"
+5117,Priya Nair,P-1048,5550249715,05/25/26 08:38,56,,"Wrong number, flag for data cleanup"
+5140,José Alvarez,P-1055,(555) 058-1992,05/29/26 01:42,0:15,Disconnected,"Reached spouse, pt not available, call back after 5pm"
+5019,José Alvarez,P-1009,(555) 032-4130,05/19/26 18:30,15,wrong #,
+5169,Marcus Lee,P-1069,(555) 097-5194,2026-05-28 13:54:00,5,voicemail,
+5100,Zoë Hartman,P-1039,+1 555 064 9525,2026-05-20 14:56:00,3,wrong #,"Reached spouse, pt not available, call back after 5pm"
+5022,Marcus Lee,P-1010,555-058-0547,2026-05-15 15:04:00,6,No Answer,"Wrong number, flag for data cleanup"
+5047,Tom Becker,P-1018,5550572700,21-May-2026 09:01,294,ANSWERED,Pt agreed to schedule follow-up
+5080,Priya Nair,,555-034-4316,2026-05-19 10:38:00,453,Spoke w/ patient,"Reviewed care plan, all good"
+5052,Marcus Lee,P-1020,(555) 014-7726,16-May-2026 18:36,3,Wrong Number,"Wrong number, flag for data cleanup"
+5045,Priya Nair,P-1017,1-555-013-2537,2026-05-21T17:38:00Z,27,Busy,"LVM, will retry"
+5157,Aisha Bello,P-1062,555-029-7636,05/24/2026 05:21 AM,26,VM,"Reached spouse, pt not available, call back after 5pm"
+5011,Priya Nair,P-1006,1-555-094-5964,05/13/26 16:22,437,Connected,"Patient said ""feeling much better"", declined visit for now"
+5089,Ken Tanaka,P-1035,5550337144,2026-06-01T09:08:00Z,5,wrong #,"LVM, will retry"
+5098,Dana Whitfield,P-1038,1-555-069-1912,2026-05-24T19:39:00Z,5,wrong #,
+5105,Priya Nair,P-1042,(555) 030-3440,05/25/2026 04:19 PM,33,no-answer,"Reached spouse, pt not available, call back after 5pm"
+5108,Dana Whitfield,P-1043,(555) 033-2823,05/13/26 14:33,8,Busy,"Wrong number, flag for data cleanup"
+5010,Dana Whitfield,P-1005,+1 555 026 7753,05/29/26 21:08,,Wrong Number,"No answer, second attempt"
+5057,Tom Becker,,555-022-0351,05/22/26 14:34,2,Busy,"LVM, will retry"
+5087,Zoë Hartman,P-1034,5550856086,2026-05-22 10:06:00,2:04,Spoke w/ patient,Pt agreed to schedule follow-up
+5118,Dana Whitfield,P-1048,+1 555 024 9715,2026-05-26 12:38:00,20,NA,Number disconnected - need updated contact
+5009,Priya Nair,P-1005,(555) 026-7753,26-May-2026 15:08,0,voicemail,Number disconnected - need updated contact
+5123,Priya Nair,P-1049,555-031-0743,18-May-2026 02:05,3,no-answer,"Reached spouse, pt not available, call back after 5pm"
+5119,José Alvarez,P-1048,(555) 024-9715,2026-05-27T14:38:00Z,13,Disconnected,Number disconnected - need updated contact
+5050,José Alvarez,P-1019,5550353080,02-Jun-2026 19:58,,busy signal,"Reached spouse, pt not available, call back after 5pm"
+5101,Priya Nair,P-1039,(555) 064-9525,2026-05-22T16:56:00Z,384,Connected,"Patient said ""feeling much better"", declined visit for now"
+5166,Ken Tanaka,P-1067,(555) 069-2447,05/20/26 10:11,2,wrong #,
+5077,Zoë Hartman,P-1029,1-555-062-6169,2026-05-26T21:21:00Z,15,Voicemail,"LVM, will retry"
+5026,Aisha Bello,,5550237174,06/02/2026 10:15 PM,487,answered,Pt agreed to schedule follow-up
+5167,Ken Tanaka,P-1068,(555) 098-6392,05/29/26 10:27,13,VM,"No answer, second attempt"
+5121,Tom Becker,P-1049,+1 555 031 0743,2026-05-11 14:05:00,35,Busy,
+5086,Zoë Hartman,P-1033,+1 555 033 2311,05/25/26 06:11,329,ANSWERED,Pt agreed to schedule follow-up
+5049,Marcus Lee,P-1019,555-035-3080,29-May-2026 17:58,16,No Answer,"Mailbox full, could not leave message"
+5033,Marcus Lee,P-1014,1-555-079-6101,05/20/26 12:21,57,answered,Pt agreed to schedule follow-up
+5002,Marcus Lee,P-1002,(555) 078-1453,29-May-2026 13:21,27,voicemail,"Wrong number, flag for data cleanup"
+5051,Tom Becker,P-1020,+1 555 014 7726,2026-05-15 15:36:00,0:30,Wrong Number,"Mailbox full, could not leave message"
+5030,Zoë Hartman,P-1012,5550802448,05/26/2026 05:20 PM,76,Spoke w/ family,"LVM, will retry"
+5034,Aisha Bello,P-1014,1-555-079-6101,2026-05-24 15:21:00,0,voicemail,"Wrong number, flag for data cleanup"
+5001,Marcus Lee,P-1001,1-555-077-0487,2026-05-18 11:38:00,34,wrong #,"Wrong number, flag for data cleanup"
+5072,Marcus Lee,P-1028,(555) 088-1369,05/20/2026 12:08 PM,12,Left VM,"Wrong number, flag for data cleanup"
+5005,José Alvarez,P-1003,(555) 048-8162,05/13/26 11:04,24,voicemail,Number disconnected - need updated contact
+5085,Marcus Lee,P-1033,(555) 033-2311,2026-05-24T01:11:00Z,0:23,wrong #,"Mailbox full, could not leave message"
+5149,Dana Whitfield,P-1059,5550568449,2026-05-16T17:27:00Z,3,Busy,
+5029,Aisha Bello,P-1012,1-555-080-2448,24-May-2026 15:20,0:06,No Answer,"LVM, will retry"
+5136,Zoë Hartman,P-1054,+1 555 073 5710,05/23/26 22:09,3,Wrong Number,Number disconnected - need updated contact
+5071,Aisha Bello,P-1027,1-555-041-6797,2026-05-14 11:54:00,339,No Answer,"Reviewed care plan, all good"
+5147,Ken Tanaka,P-1058,555-057-6419,2026-05-22T23:59:00Z,29,Busy,"No answer, second attempt"
+5084,Zoë Hartman,P-1033,+1 555 033 2311,2026-05-22T23:11:00Z,13,busy signal,"Wrong number, flag for data cleanup"
+5072,Marcus Lee,P-1028,(555) 088-1369,05/20/2026 12:08 PM,12,Left VM,"Wrong number, flag for data cleanup"
+5118,Dana Whitfield,P-1048,+1 555 024 9715,2026-05-26 12:38:00,20,NA,Number disconnected - need updated contact
+5016,Marcus Lee,P-1008,555-023-8739,2026-05-31 18:45:00,3,busy signal,"LVM, will retry"
+5077,Zoë Hartman,P-1029,1-555-062-6169,2026-05-26T21:21:00Z,15,Voicemail,"LVM, will retry"
+5082,Marcus Lee,P-1033,5550332311,2026-05-20T16:11:00Z,25,VM,Number disconnected - need updated contact
+5061,Ken Tanaka,P-1022,1-555-080-4938,2026-05-23T09:03:00Z,17,VM,"No answer, second attempt"
+5133,Tom Becker,P-1054,(555) 073-5710,2026-05-16T15:09:00Z,21,No Answer,"Reached spouse, pt not available, call back after 5pm"
+5053,Aisha Bello,P-1020,1-555-014-7726,20-May-2026 22:36,0:33,Wrong Number,"No answer, second attempt"
+5038,José Alvarez,P-1016,5550316881,2026-05-29T15:00:00Z,197,Connected,"Reviewed care plan, all good"
+5021,Tom Becker,P-1010,1-555-058-0547,14-May-2026 10:04,22,No Answer,"No answer, second attempt"
+5088,Zoë Hartman,P-1035,555-033-7144,28-May-2026 09:08,1,Disconnected,"Mailbox full, could not leave message"
+5113,Tom Becker,P-1046,(555) 040-7696,05/12/2026 02:29 PM,34,no-answer,
+5071,Aisha Bello,P-1027,1-555-041-6797,2026-05-14 11:54:00,339,Spoke w/ patient,"Reviewed care plan, all good"
+5153,Dana Whitfield,P-1062,(555) 029-7636,05/14/26 09:21,1,Wrong Number,
+5094,Aisha Bello,P-1037,1-555-051-6359,05/27/2026 04:25 PM,0:23,Busy,
+5032,Ken Tanaka,P-1013,555-041-4910,05/23/2026 06:14 PM,20,Wrong Number,"Wrong number, flag for data cleanup"
+5006,José Alvarez,P-1003,+1 555 048 8162,14-May-2026 17:04,13,No Answer,"LVM, will retry"
+5035,Zoë Hartman,P-1014,+1 555 079 6101,05/26/26 21:21,29,voicemail,
+5135,Ken Tanaka,P-1054,555-073-5710,2026-05-21 19:09:00,338,answered,"Confirmed appt for next week, no concerns"
+5165,Tom Becker,P-1066,(555) 040-0614,24-May-2026 10:36,15,busy signal,"No answer, second attempt"
+5103,Zoë Hartman,P-1040,1-555-093-0117,2026-05-27 22:53:00,0:34,busy signal,
+5163,Marcus Lee,P-1065,(555) 067-7390,05/20/2026 08:16 PM,16,Callback requested,"Spoke with patient, will call back to confirm time"
+5134,José Alvarez,P-1054,1-555-073-5710,05/17/26 18:09,1,Disconnected,
+5156,Ken Tanaka,P-1062,555-029-7636,05/21/26 23:21,26,Disconnected,Number disconnected - need updated contact
+5091,Ken Tanaka,P-1035,5550337144,06/08/26 18:08,,busy signal,"LVM, will retry"
+5145,Dana Whitfield,P-1058,5550576419,05/19/26 17:59,17,Left VM,Number disconnected - need updated contact
+5162,Ken Tanaka,P-1065,1-555-067-7390,05/19/2026 04:16 PM,10,Busy,Number disconnected - need updated contact
+5067,Aisha Bello,P-1024,+1 555 029 9869,05/26/26 23:19,5,no-answer,"Wrong number, flag for data cleanup"
+5114,Marcus Lee,P-1047,(555) 023-0521,25-May-2026 14:51,31,Busy,"Wrong number, flag for data cleanup"
+5084,Zoë Hartman,P-1033,+1 555 033 2311,2026-05-22T23:11:00Z,13,busy signal,"Wrong number, flag for data cleanup"
+5014,Aisha Bello,P-1008,(555) 023-8739,2026-05-29T15:45:00Z,6,no-answer,"No answer, second attempt"
+5137,Tom Becker,P-1055,+1 555 058 1992,19-May-2026 15:42,19,No Answer,"Reached spouse, pt not available, call back after 5pm"
+5043,Aisha Bello,P-1017,555-013-2537,2026-05-16T17:38:00Z,0:01,No Answer,"LVM, will retry"
+5039,Dana Whitfield,P-1016,1-555-031-6881,05/30/2026 06:00 PM,25,wrong #,
+5146,Marcus Lee,P-1058,5550576419,20-May-2026 22:59,202,Connected,"Spoke with patient, will call back to confirm time"
+5124,Priya Nair,P-1050,1-555-018-2690,05/28/26 12:38,5,Wrong Number,"Reached spouse, pt not available, call back after 5pm"
+5095,José Alvarez,P-1037,5550516359,05/30/26 21:25,10,NA,
+5018,Priya Nair,P-1009,1-555-032-4130,05/17/26 18:30,0:20,VM,"Wrong number, flag for data cleanup"
+5106,Tom Becker,P-1042,1-555-030-3440,05/28/2026 08:19 PM,33,Disconnected,
+5046,Tom Becker,P-1017,555-013-2537,05/24/26 21:38,30,busy signal,
+5004,Marcus Lee,P-1002,+1 555 078 1453,06/04/2026 09:21 PM,14,NA,"LVM, will retry"
+5062,Aisha Bello,P-1023,+1 555 067 7596,14-May-2026 15:37,522,answered,"Spoke with patient, will call back to confirm time"
+5075,Aisha Bello,P-1029,5550626169,05/23/26 16:21,0:23,Voicemail,Number disconnected - need updated contact
+5150,Dana Whitfield,P-1060,555-095-6113,2026-05-12T14:52:00Z,75,Connected,"Patient said ""feeling much better"", declined visit for now"
+5042,Zoë Hartman,P-1017,1-555-013-2537,15-May-2026 11:38,103,Reached - scheduled,"Scheduled, sending reminder"
+5171,Aisha Bello,P-1069,(555) 097-5194,06/03/2026 01:54 AM,0:04,Left VM,"Wrong number, flag for data cleanup"
+5056,Marcus Lee,P-1021,5550220351,2026-05-19T10:34:00Z,105,Spoke w/ family,"Reviewed care plan, all good"
+5007,Ken Tanaka,P-1004,(555) 037-7746,05/28/26 13:17,23,Wrong Number,Number disconnected - need updated contact
+5154,Zoë Hartman,P-1062,5550297636,05/15/2026 12:21 PM,3,busy signal,"No answer, second attempt"
+5145,Dana Whitfield,P-1058,5550576419,05/19/26 17:59,17,Left VM,Number disconnected - need updated contact
+5079,José Alvarez,P-1031,1-555-051-7479,05/25/2026 10:12 AM,1,wrong #,"Reached spouse, pt not available, call back after 5pm"
+5043,Aisha Bello,P-1017,555-013-2537,2026-05-16T17:38:00Z,0:01,No Answer,"LVM, will retry"
+5168,Aisha Bello,P-1068,5550986392,06/01/2026 02:27 PM,-3,VM,"No answer, second attempt"
+5028,Zoë Hartman,P-1012,(555) 080-2448,05/21/26 14:20,17,Voicemail,
+5040,José Alvarez,P-1016,5550316881,31-May-2026 18:00,29,voicemail,
+5013,Marcus Lee,P-1007,5550454508,29-May-2026 11:30,39,,"LVM, will retry"
+5175,Aisha Bello,P-1070,5550727094,18-May-2026 18:56,8,Busy,"LVM, will retry"
+5039,Dana Whitfield,P-1016,1-555-031-6881,05/30/2026 06:00 PM,25,wrong #,
