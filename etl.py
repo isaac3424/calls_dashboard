@@ -122,14 +122,41 @@ df_raw = pd.read_csv(CSV_PATH, dtype=str)
 print(f"  {len(df_raw)} rows loaded")
 
 # ─────────────────────────────────────────────
-# STEP 2 — LOAD RAW DATA
+# STEP 2 — LOAD RAW DATA (accumulative, no truncate)
 # ─────────────────────────────────────────────
 
 print("Loading raw data...")
 
+raw_inserted = 0
+raw_skipped = 0
+
 with engine.begin() as conn:
-    conn.execute(text("TRUNCATE TABLE raw_calls"))
     for _, row in df_raw.iterrows():
+        # Check if exact same raw row already exists
+        result = conn.execute(text("""
+            SELECT 1 FROM raw_calls
+            WHERE call_id IS NOT DISTINCT FROM :call_id
+            AND coordinator IS NOT DISTINCT FROM :coordinator
+            AND patient_id IS NOT DISTINCT FROM :patient_id
+            AND phone IS NOT DISTINCT FROM :phone
+            AND call_time IS NOT DISTINCT FROM :call_time
+            AND duration_sec IS NOT DISTINCT FROM :duration_sec
+            AND disposition IS NOT DISTINCT FROM :disposition
+            AND notes IS NOT DISTINCT FROM :notes
+        """), {
+            "call_id": row["call_id"] if pd.notna(row["call_id"]) else None,
+            "coordinator": row["coordinator"] if pd.notna(row["coordinator"]) else None,
+            "patient_id": row["patient_id"] if pd.notna(row["patient_id"]) else None,
+            "phone": row["phone"] if pd.notna(row["phone"]) else None,
+            "call_time": row["call_time"] if pd.notna(row["call_time"]) else None,
+            "duration_sec": row["duration_sec"] if pd.notna(row["duration_sec"]) else None,
+            "disposition": row["disposition"] if pd.notna(row["disposition"]) else None,
+            "notes": row["notes"] if pd.notna(row["notes"]) else None,
+        })
+        if result.fetchone():
+            raw_skipped += 1
+            continue
+
         conn.execute(text("""
             INSERT INTO raw_calls (call_id, coordinator, patient_id, phone, call_time, duration_sec, disposition, notes)
             VALUES (:call_id, :coordinator, :patient_id, :phone, :call_time, :duration_sec, :disposition, :notes)
@@ -143,7 +170,10 @@ with engine.begin() as conn:
             "disposition": row["disposition"] if pd.notna(row["disposition"]) else None,
             "notes": row["notes"] if pd.notna(row["notes"]) else None,
         })
-print(f"  Raw rows loaded: {len(df_raw)}")
+        raw_inserted += 1
+
+print(f"  Raw rows inserted: {raw_inserted}")
+print(f"  Raw rows skipped (already exist): {raw_skipped}")
 
 # ─────────────────────────────────────────────
 # STEP 3 — TRANSFORM
@@ -226,16 +256,12 @@ print(f"  Flagged rows:      {len(flagged_df)}")
 print(f"  True duplicates:   {len(true_duplicates_df)}")
 
 # ─────────────────────────────────────────────
-# STEP 7 — LOAD CLEAN AND FLAGGED DATA
+# STEP 7 — LOAD CLEAN AND FLAGGED DATA (accumulative, no truncate)
 # ─────────────────────────────────────────────
 
 print("Loading into database...")
 
 with engine.begin() as conn:
-
-    # --- Clear existing data before reloading (safe for reruns) ---
-    conn.execute(text("TRUNCATE TABLE calls, call_logs_flagged, patients, coordinators RESTART IDENTITY CASCADE"))
-    print("  Existing data cleared")
 
     # --- Upsert coordinators ---
     coordinators = clean_df[["coordinator"]].dropna().drop_duplicates()
@@ -247,7 +273,7 @@ with engine.begin() as conn:
         """), {"name": row["coordinator"]})
     print(f"  Coordinators upserted: {len(coordinators)}")
 
-    # --- Upsert patients (use most recent phone per patient) ---
+    # --- Upsert patients ---
     patients = (
         clean_df[["patient_id", "phone"]]
         .dropna(subset=["patient_id"])
@@ -264,6 +290,7 @@ with engine.begin() as conn:
 
     # --- Insert clean calls ---
     calls_inserted = 0
+    calls_skipped = 0
     for _, row in clean_df.iterrows():
         result = conn.execute(text("""
             SELECT id FROM coordinators WHERE name = :name
@@ -271,10 +298,11 @@ with engine.begin() as conn:
         coord_row = result.fetchone()
         coordinator_id = coord_row[0] if coord_row else None
 
-        conn.execute(text("""
+        result = conn.execute(text("""
             INSERT INTO calls (call_id, coordinator_id, patient_id, call_time, duration_sec, disposition, notes)
             VALUES (:call_id, :coordinator_id, :patient_id, :call_time, :duration_sec, :disposition, :notes)
             ON CONFLICT (call_id) DO NOTHING
+            RETURNING call_id
         """), {
             "call_id": row["call_id"],
             "coordinator_id": coordinator_id,
@@ -284,10 +312,14 @@ with engine.begin() as conn:
             "disposition": row["disposition"] if pd.notna(row["disposition"]) else None,
             "notes": row["notes"] if pd.notna(row["notes"]) else None,
         })
-        calls_inserted += 1
+        if result.fetchone():
+            calls_inserted += 1
+        else:
+            calls_skipped += 1
     print(f"  Calls inserted: {calls_inserted}")
+    print(f"  Calls skipped (already exist): {calls_skipped}")
 
-    # --- Insert flagged rows ---
+    # --- Insert flagged rows (skip if same call_id and flag_reason already exist) ---
     conn.execute(text("""
         CREATE TABLE IF NOT EXISTS call_logs_flagged (
             id SERIAL PRIMARY KEY,
@@ -303,7 +335,21 @@ with engine.begin() as conn:
         )
     """))
     flagged_inserted = 0
+    flagged_skipped = 0
     for _, row in flagged_df.iterrows():
+        # Check if same call_id and flag_reason already exists
+        existing = conn.execute(text("""
+            SELECT 1 FROM call_logs_flagged
+            WHERE call_id IS NOT DISTINCT FROM :call_id
+            AND flag_reason IS NOT DISTINCT FROM :flag_reason
+        """), {
+            "call_id": row["call_id"] if pd.notna(row["call_id"]) else None,
+            "flag_reason": row["flag"],
+        })
+        if existing.fetchone():
+            flagged_skipped += 1
+            continue
+
         conn.execute(text("""
             INSERT INTO call_logs_flagged
             (call_id, coordinator, patient_id, phone, call_time, duration_sec, disposition, notes, flag_reason)
@@ -322,5 +368,6 @@ with engine.begin() as conn:
         })
         flagged_inserted += 1
     print(f"  Flagged rows inserted: {flagged_inserted}")
+    print(f"  Flagged rows skipped (already exist): {flagged_skipped}")
 
 print("ETL complete.")
